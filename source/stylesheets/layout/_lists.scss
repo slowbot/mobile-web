@@ -1,0 +1,78 @@
+.messagelist {
+	margin: 2em 0;
+
+	.message {
+		margin-bottom: rem-calc(4px);
+		position: relative;
+
+		.status {
+			position: absolute;
+			top: .625em;
+			left: .5em;
+		}
+
+		.fromto {
+			@include grid-column($columns:12);
+		}
+
+		.subject {
+			@include grid-column($columns:12);
+		}
+
+		.date {
+
+			position: absolute;
+			top: .625em;
+			right: 1em;
+		}
+
+		.attachment {
+			position: absolute;
+			top: 2.25em;
+			right: 1em;
+		}
+	}
+}
+
+@media #{$medium-up} {
+
+	%relative-reset {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+	}
+
+	.messagelist {
+
+		.message {
+			padding: 1em 0;
+
+			.status {
+				@include grid-column($columns:1);
+				@extend %relative-reset;
+				text-align: center;
+			}
+
+			.fromto {
+				@include grid-column($columns:3);
+			}
+
+			.subject {
+				@include grid-column($columns:4);
+			}
+
+			.date {
+				@include grid-column($columns:3);
+				@extend %relative-reset;
+			}
+
+			.attachment {
+				@include grid-column($columns:1);
+				@extend %relative-reset;
+				text-align: center;
+			}
+		}		
+	}
+}	

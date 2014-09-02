@@ -1,0 +1,36 @@
+.mini-calendar {
+	border: none;
+	
+	thead {
+		background-color: $success-color;
+		
+		th {
+			color: darken($success-color, 40%);
+			font-weight: 200;
+			font-size: 1.125em;
+			text-align: center;
+			padding: 1rem;
+		
+			&.dow {
+				font-weight: 600;
+				font-size: 1em;
+			}
+		}
+	}
+
+	tr:nth-of-type(even) {
+		background-color: transparent;
+	}
+
+	tr td {
+		color: lighten(#333, 40%);
+		font-size: 1.025rem;
+		font-weight: 200;
+		padding: 1rem;
+		text-align: center;
+	}
+
+	tbody {
+		background-color: #efefef;
+	}
+}

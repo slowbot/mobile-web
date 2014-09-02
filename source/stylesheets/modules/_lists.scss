@@ -1,0 +1,42 @@
+.messagelist {
+	font-size: rem-calc(14px);
+	
+	[class^="icon-"], [class*=" icon-"] {
+		color: #999;
+	}
+
+	.icon-star {
+		&:hover {
+			color: $warm-color;
+		}
+	}
+
+	.message {
+		@include border-radius(4px);
+		padding: .625em 1em;
+
+		&:nth-child(odd) {
+			background-color: #efefef;
+		}
+
+		&:hover, &.active {
+			background-color: rgba($primary-color, .2);
+		}
+
+		&.read {
+			color: #999;
+		}
+
+		&.unread {
+			.fromto, .subject {
+				font-weight: 600;
+			}
+		}
+
+		.date {
+			color: #999;
+
+		}
+
+	}
+}

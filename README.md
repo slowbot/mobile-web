@@ -1,4 +1,4 @@
-mobile-web
-==========
+cloudstead-pattern-library
+==========================
 
-Patterns for Responsive App
+Static front-end pattern library for Cloudstead.io

@@ -1,0 +1,31 @@
+.tab-menu {
+	.inline-list {
+		font-size: .85em;
+		line-height: 3em;	
+		margin-bottom: 0;
+	}	
+}
+
+.sidenav {
+	background: #333;
+	
+	li {
+		a {
+			padding: 1em;
+			color: rgba(#fff, .6);
+			display: block;
+			font-weight: 200;
+
+			&:hover {
+				background: rgba(#fff, .1);
+				color: #fff;
+			}
+		}
+	}	
+
+	.button {
+		font-size: .85em;
+		text-transform: uppercase;
+		margin: 1em;
+	}
+}

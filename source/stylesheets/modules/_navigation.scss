@@ -1,0 +1,27 @@
+.app-bar {
+	background-color: $primary-color;
+}
+
+.nav-marketing {
+	li {
+		display: block;
+		list-style: none;
+
+		@media #{$medium-up} {
+			float: left;
+		}	
+	}
+
+	a {
+		display: block;
+		font-family: $font-family;
+		padding: 0 1em;
+		line-height: rem-calc(70);
+	}
+}
+
+.top-bar-section {
+	ul li {
+		background-color: transparent;
+	}
+}

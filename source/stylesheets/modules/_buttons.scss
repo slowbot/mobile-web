@@ -1,0 +1,36 @@
+%inverse-button {
+	background-color: transparent;
+	border: 2px solid #fff;
+}
+
+.button, button {
+	background: $primary-color;
+	color: #fff;
+	font-family: $sans-font-family;
+	
+	@include border-radius(4px);
+
+	&.inverse {
+		@extend %inverse-button;
+	}
+
+	&.round {
+		background-color: #fff;
+		border: 1px solid #ccc;
+		color: #ccc;
+		line-height: 1rem;
+		padding: .5rem;
+
+		span {
+			text-align: center;
+		}
+
+		&:hover {
+			color: darken(#ccc, 20%);
+		}
+	}
+
+	&.inline {
+		margin-right: 1em;
+	}
+}

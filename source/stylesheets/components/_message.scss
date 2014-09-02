@@ -1,0 +1,28 @@
+.mail {
+	font-size: rem-calc(14px);
+
+	.message {
+		@extend %card-style;
+
+		&-header {
+			margin-bottom: $rhythm;
+		}
+
+		&-content {
+			margin-bottom: $rhythm;
+		}
+
+		&-footer {
+			@include clearfix;
+			margin-bottom: $rhythm;
+		}
+	}
+
+	.attachment {
+		@include border-radius(4px);
+		border: 1px solid $primary-color;
+		display: inline-block;
+		padding: 1em 2em;
+	}
+}
+

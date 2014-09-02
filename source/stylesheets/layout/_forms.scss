@@ -1,0 +1,53 @@
+input[type="text"], 
+input[type="password"], 
+input[type="date"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="month"], 
+input[type="week"], 
+input[type="email"], 
+input[type="number"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="time"], 
+input[type="url"], 
+textarea {
+	@include border-radius(3px);
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+
+	&.wrap-set {
+		@include box-shadow(0 8px 10px rgba(0, 0, 0, 0.075));
+		@include border-radius(8px);
+		background: #fff;
+		padding: 2em;
+	}
+}
+
+input[type="search"] {
+	-webkit-appearance: none;
+	height: auto;
+}
+
+textarea {
+	margin-bottom: 1em;
+}
+
+.field-container {
+	.note {
+		display: block;
+		font-size: .725rem;
+		margin-top: -1.25em;
+		margin-bottom: 1em;
+		padding: .25em 1em;
+		
+		&.valid {
+			background: $primary-color;
+			color: #fff;
+		}
+	}
+}
+
